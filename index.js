@@ -13,6 +13,7 @@ const db = new Sequelize(process.env.DATABASE_URL, {
 });
 
 app.get("/", async(req, res) => {
+    console.log("Got here!");
     res.status(200).json({"status": "ok"});
 });
 
