@@ -5,7 +5,7 @@ const app = express();
 require("dotenv").config();
 
 const db = new Sequelize(process.env.DATABASE_URL, {
-    dialiectOptions: {
+    dialectOptions: {
         ssl: {
             rejectUnauthorized: false
         }
